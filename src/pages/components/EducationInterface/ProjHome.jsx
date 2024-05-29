@@ -29,7 +29,7 @@ const ProjHome = () => {
         </div>
         <div className="proj_right">
           {imageStyle?.globalImages?.proj_img ? (
-            <img src={require(/public/profile_img.JPG)} alt="Project Img" />
+            <img src={require(imageStyle?.globalImages?.proj_img)} alt="Project Img" />
           ) : (
             <Skeleton props={{ width: '80%', height: '90%' }} />
           )}
